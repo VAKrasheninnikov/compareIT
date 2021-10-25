@@ -1,0 +1,1018 @@
+*{margin:0;
+padding: 0;}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  margin:0;
+  background-color: #e7f6ff;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.bodyApp {
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  max-width: 1728px;
+  height:fit-content;
+  padding:10px;
+  margin: 50px auto;
+}
+
+
+.loginContainer {
+  margin:0 auto;
+  margin-top:12%;
+  max-width: 350px;
+  padding:20px;
+  padding-top:30px;
+  padding-bottom: 40px;
+  transform: scale(1.15);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
+  border-radius: 20px;
+  color: #0B2349;
+}
+
+.loginContainer h3 {
+  margin-bottom: 3px;
+}
+
+.loginContainer input {
+  margin-bottom: 20px;
+  margin-top: 3px;
+  padding:5px;
+  outline:none;
+  color: #0B2349;
+  font-weight: 400;
+  border-radius: 5px;
+  border:none;
+  box-shadow: inset 3px 3px 10px rgba(154, 147, 140, 0.5);
+}
+
+.btnContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btnContainer button {
+  margin-bottom: 20px;
+  width:179px;
+  height: 30px;
+  outline: none;
+  border:none;
+  border-radius: 5px;
+  background-color: #0B2349;
+  cursor: pointer;
+  color:white;
+  font-size: 15px;
+  transition: .1s;
+}
+
+.btnContainer button:hover {
+  width:179px;
+  height: 30px;
+  outline: none;
+  border:none;
+  border-radius: 5px;
+  background-color: green;
+  cursor: pointer;
+  color:white;
+  font-size: 15px;
+  transition: .1s;
+}
+
+.btnContainer p {
+  text-align: center;
+  font-size: 12px;
+}
+
+.btnContainer h5:hover {
+  text-align: center;
+  color:#eec94f;
+  cursor: pointer;
+  transition: .1s;
+}
+
+.headerApp {
+  padding-left:35px;
+  padding-right: 25px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom:1px solid #e6e6e6;
+  
+}
+
+.errorMsg {
+  text-align: center;
+  font-size: 12px;
+  color:red;
+  margin-bottom:15px;
+}
+
+.headerLogoText {
+  margin-left:40px;
+}
+
+h1 {
+  color: #0B2349;
+}
+
+.headerApp span {
+  font-size: 14px;
+  font-weight: 500;
+  opacity: .5;
+}
+
+tr.sampleCellSmall {
+  height: 84px;
+}
+
+tr.sampleCellBig {
+  height: 122px;
+}
+
+.headerLogo {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.headerAdministration i {
+  font-size: 20px;
+  margin-left:10px;
+  color:#0B2349;
+}
+
+.headerAdministration {
+  opacity:.7;
+}
+
+
+.headerAdministration:hover {
+  opacity: 1;
+}
+
+.headerTextPart {
+  display: flex;
+  align-items: center;
+  margin-right: 75px;
+}
+
+.headerNavigation {
+  margin-right:-35px;
+}
+
+.headerNavigation li {
+  margin:10px;
+  padding:10px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #0B2349;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.headerNavigation li:hover {
+  transform: translateY(-5px);
+  transition: .2s;
+}
+
+.headerAdministration {
+  display: flex;
+  font-size: 15px;
+  font-weight: bold;
+  color: #0B2349;
+  cursor: pointer;
+}
+
+.headerApp ul {
+  display: flex;
+  list-style-type: none;
+}
+
+.descriptionPage {
+  display: flex;
+  background: url('./components/8400.jpg');
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin:50px;
+}
+
+.bckGround {
+  position: absolute;
+  margin-left:250px;
+  z-index: 0;
+}
+
+.creators {
+  display: flex;
+  opacity: 0.8;
+  background-color: white;
+  z-index:1;
+}
+
+.creators h5 {
+  max-width:600px;
+  color:#0B2349;
+  padding:15px;
+  border-radius: 5px;
+  border: 2px dashed #0B2349;
+}
+
+.creatorsPics {
+  display: flex;
+}
+
+.appSence {
+  margin-top: 40px;
+  background-color: white;
+  z-index:1;
+  opacity: 0.8;
+  display: flex;
+  margin-left: auto;
+}
+
+.appSence h5 {
+  max-width:600px;
+  color:#0B2349;
+  padding:15px;
+  border-radius: 5px;
+  border: 2px dashed #0B2349;
+}
+
+.nowExperience {
+  background-color: white;
+  opacity: 0.8;
+  margin-top: 40px;
+  z-index:1;
+  display: flex;
+}
+
+.nowExperience h5 {
+  max-width:600px;
+  color:#0B2349;
+  padding:15px;
+  border-radius: 5px;
+  border: 2px dashed #0B2349;
+}
+
+
+.mainTable {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin:50px;
+}
+
+.compareBlock {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  text-align: left;
+  align-items: center;
+  transition: .5s;
+}
+
+.compareBlockDisable {
+  flex:0;
+  opacity: 0;
+  margin-left: -285px;
+  transition: .5s;
+}
+
+.inlineOptions {
+  display: flex;
+}
+
+.compareBlock li {
+  list-style-type: none;
+  padding:5px;
+  margin-left:15px;
+}
+
+.compareBlock input {
+  width:100%;
+  margin-right:6px;
+  padding:5px;
+  outline:none;
+  color:black;
+  border-radius: 5px;
+  border:none;
+  box-shadow: inset 2px 2px 3px rgba(154, 147, 140, 0.5);
+}
+
+.addFood {
+  width:275px;
+  border-radius: 15px;
+  background: #e7f6ff;
+  color: #0B2349;
+  filter: drop-shadow(3px 3px 5px #949494);
+  height:fit-content;
+}
+
+.addFood h5 {
+  padding-top: 18px;
+  padding-left:18px;
+}
+
+.addParameter h5 {
+  padding-top: 18px;
+  padding-left:18px;
+}
+
+.addFooditem {
+  margin:14px;
+  border-radius: 10px;
+  height:190px;
+  background: white;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5);
+  overflow-y: scroll;
+}
+
+.addFooditem li {
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  margin:6px;
+  font-weight: 500;
+  color:#0B2349;
+  
+}
+
+.addFooditem li i {
+  color:#0B2349;
+  margin-right: 5px;
+  transition: .1s;
+}
+
+.addFooditem li i:hover {
+  color:#0B2349;
+  margin-right: 5px;
+  transform: scale(1.1);
+  transition: .1s;
+  cursor: pointer;
+}
+
+
+.foodSearch {
+  display:flex;
+  align-items: center;
+  padding:18px;
+}
+
+.foodSearch i {
+  opacity:.7;
+}
+
+.foodSearch i:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.parameterSearch i {
+  opacity:.7;
+}
+
+.parameterSearch i:hover {
+  opacity:1;
+  cursor: pointer;
+}
+
+.addParameter {
+  border-radius: 15px;
+  background: #e7f6ff;
+  filter: drop-shadow(3px 3px 5px #949494);
+  height:fit-content;
+}
+
+.parameterSearch {
+  display:flex;
+  align-items: center;
+  padding:18px;
+}
+
+.customOption {
+  margin-top: 34px;
+  border-radius: 15px;
+  width:277px;
+  color: #0B2349;
+  background: #e7f6ff;
+  filter: drop-shadow(3px 3px 5px #949494);
+  height:fit-content;
+}
+
+.customOption h5 {
+  padding-top: 18px;
+  padding-left: 12px;
+}
+
+.customConstructor {
+  padding-top: 10px;
+  padding-left: 11px;
+  padding-right: 9px;
+}
+
+.addName {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.customConstructor i{
+  color:#0B2349;
+  margin-right:14px;
+}
+
+.customConstructor i:hover{
+  transform: scale(1.05);
+  transition: .1s;
+  cursor: pointer;
+}
+
+.addName input {
+  width:100%;
+}
+
+.customConstructor h5 {
+  margin-top:20px;
+  margin-bottom:10px;
+  padding: 0px;
+}
+
+.parOptions {
+  padding-right: 9px;
+  display: flex;
+  margin-top: 7px;
+  align-items: baseline;
+}
+.parOptions input {
+  padding: 0;
+  margin: 0;
+  height: 17px;
+  width:100%;
+  padding:3px;
+  font-size: 13px;
+}
+
+.addParValue {
+  margin-left: 15px;
+}
+
+.addParValue input {
+  width: 70px;
+}
+
+.addParValue i:hover {
+  color:red
+}
+
+.finalButtons {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin:7px;
+padding-top:3px;
+padding-bottom: 3px;
+}
+
+.finalButtons button {
+  outline: none;
+  border: none;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 17px;
+  opacity: 0.3;
+  border-radius: 50%;
+  padding:6px;
+  transition: .15s;
+}
+
+.finalButtons button:hover {
+  cursor: pointer;
+  color: #0B2349;
+  transition: .15s;
+  box-shadow: inset 3px 3px 6px rgba(0, 0, 0, 0.5); 
+  opacity: 1;
+}
+
+.finalButtons button:active {
+  cursor: pointer;
+  transition: .2s;
+  background: #0B2349;
+  color:white;
+}
+
+.deleteNplace {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  margin-left:-6px;
+  padding-bottom: 6px;
+}
+
+.outputBlock {
+  align-items: flex-start;
+  margin-top:-2px;
+  margin-left:80px;
+  overflow-x: auto;
+  transition: .5s;
+}
+
+.outputBlockEnable {
+  align-items: flex-start;
+  overflow-x: auto;
+  transition: .5s;
+}
+
+table {
+  text-align: center;
+   border-collapse: separate;
+   empty-cells: hide; 
+}
+
+table i {
+  margin-left:5px;
+  color:#0B2349;
+}
+
+table i:hover {
+  color:red;
+  cursor: pointer;
+}
+tr {
+  display: flex;
+}
+
+.foodLabel {
+  font-size: 15px;
+  font-weight: 500
+}
+
+.foodNames {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  width:170px;
+}
+
+.foodNames:hover {
+  color:#0B2349;
+  background-color: white;
+  cursor: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+  width:170px;
+}
+
+
+
+.showPlace {
+  width:170px;
+  display: flex;
+  justify-content: space-around;
+  font-size: 20px;
+  cursor: auto;
+}
+
+.showPlace:hover {
+  cursor:auto;
+}
+
+.showPlace .fas, .far {
+  transition: .1s;
+  padding:7px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+}
+
+
+
+.showPlace .fas:hover{
+  transition: .1s;
+  background-color: #0B2349;
+  color:white
+}
+
+.showPlace .fas.active{
+  transition: .1s;
+  background-color: #0B2349;
+  color:white
+}
+
+.deleteNplace .fas.active {
+  cursor:auto;
+  color:black;
+  opacity:0.2;
+}
+
+.showPlace .far:hover{
+  transition: .1s;
+  background-color: #0B2349;
+  color:white
+}
+
+.showPlace .far.active{
+  transition: .1s;
+  background-color: #0B2349;
+  color:white
+}
+
+.showPlace:hover {
+  background-color: white;
+}
+
+.fa-table {
+  font-size:15px;
+}
+.fa-table:hover {
+  color:#0B2349;
+}
+
+::-webkit-scrollbar {
+  width:10px;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 5px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.20);
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #9ed8fc;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.30);
+}
+
+.foodNames input {
+  width: 30px;
+  margin-left:3px;
+  border-radius:3px;
+  outline: none;
+  padding:2px;
+  border:none;
+  color: #4d4d4d;
+  font-weight: bold;
+  font-size: 12px;
+  box-shadow: inset 3px 3px 6px rgba(154, 147, 140, 0.5);
+}
+
+.showPlace input {
+  text-align: center;
+  width: 28px;
+  height:28px;
+  margin-left:3px;
+  border-radius:3px;
+  outline: none;
+  padding:2px;
+  border:2px solid #0B2349;
+  border-radius: 50%;
+  color: #0B2349;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+
+.tableCellPlace input {
+  width: 30px;
+  text-align: center;
+  margin-left:3px;
+  border-radius:3px;
+  outline: none;
+  padding:2px;
+  border:none;
+  color: #4d4d4d;
+  font-weight: bold;
+  font-size: 12px;
+  box-shadow: inset 3px 3px 6px rgba(154, 147, 140, 0.5);
+}
+
+.flexCheck {
+  display: flex;
+  align-items: center;
+}
+
+.placePositionEnable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left:130px;
+  height: 20px;
+  width: 20px;
+  padding:8px;
+  background-color: #0B2349;
+  color:white;
+  font-weight: 550;
+  font-size: 13px;
+  border-radius: 50%;
+  transition: .15s;
+}
+
+.placePositionDisable {
+  display: none;
+  text-align: center;
+  width: 15.94px;
+  height: 17px;
+  margin-left:auto;
+  padding:6px;
+  background-color: #0B2349;
+  color:white;
+  font-weight: 550;
+  font-size: 13px;
+  border-radius: 50%;
+  transition: .15s;
+}
+
+.foodInputsEnable {
+  margin-top:10px;
+  display: flex;
+  text-align: left;
+}
+
+.foodInputsDisable {
+  display: none;
+}
+
+th, td {
+  border: 2px solid #e7f6ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  vertical-align: middle;
+  width:130px;
+  border-radius: 5px;
+  padding:12px;
+  font-size: 14px;
+  color:#0B2349;
+  box-shadow: inset 2px 2px 5px rgba(154, 147, 140, 0.5);
+  transition: .15s;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;   
+  -khtml-user-select: none;    
+  -moz-user-select: none;      
+  -ms-user-select: none;       
+  user-select: none; 
+}
+
+
+th:hover {
+  background-color: #e7f6ff;
+  color:#0B2349;
+  cursor: pointer;
+  transition: .1s;
+}
+
+td:hover {
+  background-color: #0B2349;
+  color:white;
+  cursor: pointer;
+  transition: .15s;
+}
+
+.tableCellPlace {
+  display: flex;
+  justify-content:space-evenly;
+  flex-direction: column;
+  font-size: 18px;
+}
+
+
+.tableCellUnder {
+  display: flex;
+  align-items: baseline;
+}
+
+.fa-exchange-alt {
+  color:white;
+  text-align: center;
+}
+
+
+.fa-exchange-alt:hover {
+  color:#eec94f;
+  text-align: center;
+}
+
+.placeTegEnable {
+  margin-left: 3px;
+}
+
+.placeTegDisable {
+  display: none;
+  margin-left: 3px;
+}
+
+.valueTeg {
+  margin-left: 3px;
+}
+
+.foodIndicator input {
+  width:30px;
+  border-radius:3px;
+  outline: none;
+  padding:2px;
+  border:none;
+  color: #4d4d4d;
+  font-weight: bold;
+  font-size: 12px;
+  box-shadow: inset 3px 3px 6px rgba(154, 147, 140, 0.5);
+}
+
+.freeField {
+  font-size: 10px;
+  font-weight: bold;
+  margin-right:5px;
+}
+
+.emptyCell {
+  background-color: white;
+  color:white;
+  border:none;
+  box-shadow:none;
+}
+
+.showCletchatka {
+  display: none;
+}
+
+.showCletchatka.active {
+  display: table-cell;
+  align-items: center;
+  transition: .2s;
+}
+
+.showCletchatka.active:hover {
+  background-color: #e7f6ff;
+  cursor: pointer;
+  transition: .2s;
+}
+
+
+.showProtein {
+  display: none;
+}
+
+.showProtein.active {
+  display: table-cell;
+  align-items: center;
+  transition: .2s;
+}
+
+.showProtein.active:hover {
+  background-color: #e7f6ff;
+  cursor: pointer;
+  transition: .2s;
+}
+
+
+.showBev {
+  display: none;
+}
+
+.showBev.active {
+  display: table-cell;
+  align-items: center;
+  transition: .2s;
+}
+
+.showBev.active:hover {
+  background-color: #e7f6ff;
+  cursor: pointer;
+  transition: .2s;
+}
+
+.showUglevod {
+  display: none;
+}
+
+.showUglevod.active {
+  display: table-cell;
+  align-items: center;
+  transition: .2s;
+}
+
+.showUglevod.active:hover {
+  background-color: #e7f6ff;
+  cursor: pointer;
+  transition: .2s;
+}
+
+
+.foodIndicator {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+
+.containerIndicator {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.Indicator {
+  width:10px;
+  height:10px;
+  background-color: green;
+  margin-top:3px;
+  margin-right:13px;
+  border-radius: 50%;
+}
+
+.inFoodTitle {
+  display:flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+
+.cletchIndicator {
+  width:10px;
+  height:10px;
+  background-color: aquamarine;
+  margin:5px;
+  border-radius: 50%;
+}
+
+.BevIndicator {
+  width:10px;
+  height:10px;
+  background-color: purple;
+  margin:5px;
+  border-radius: 50%;
+}
+
+.showPlaces {
+  transition: .2s;
+  overflow: hidden;
+}
+.showPlaces i:hover {
+  color:#0B2349;
+}
+
+
+.showPlaces:hover {
+  transition: .2s;
+  background-color: #e7f6ff;
+  transform: scale(1.02);
+  cursor: pointer;
+}
+
+.calculatePlaces {
+  transition: .2s;
+}
+.calculatePlaces i:hover {
+  color:#0B2349;
+}
+
+
+.calculatePlaces:hover {
+  transition: .2s;
+  background-color: #e7f6ff;
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.flexCletchRait{
+  display: flex;
+  justify-content: space-between;
+}
+
+input[type="number"] {
+	-moz-appearance: textfield;
+	-webkit-appearance: textfield;
+	appearance: textfield;
+}
+ 
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+	display: none;
+}
+
+.conturedTable {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width:1230px;
+  height:535px;
+  border: 2px dashed #0B2349;
+  border-radius: 20px;
+}
+
+.framePic {
+  height: 300px;
+}
