@@ -2524,8 +2524,6 @@ function App() {
 
   const [sorter, setSorter] = React.useState(uniqArr)
 
-  console.log(customObj)
-
   const handleSort = (event) => {
     var target = event.target.textContent
     setSorter(_.sortBy(uniqArr, function (obj) {
@@ -2655,6 +2653,7 @@ function App() {
         </Route>
 
       </div> : 
+    <Route path = '/'>
       <Login
         email={email}
         setEmail={setEmail}
@@ -2667,6 +2666,7 @@ function App() {
         emailError={emailError}
         passwordError={passwordError}
       />
+    </Route>
       }
 
     </div>
