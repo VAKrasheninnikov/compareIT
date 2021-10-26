@@ -18,7 +18,9 @@ function Header({ handleLogOut }) {
                         <Link to='/table'>
                             <li>Таблица</li>
                         </Link>
+                        <Link to = '/'>
                         <li onClick={handleLogOut}><i className="fas fa-sign-out-alt"></i></li>
+                        </Link>
                     </ul>
                 </div>
             </div>
