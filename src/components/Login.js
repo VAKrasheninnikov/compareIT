@@ -36,7 +36,9 @@ const Login = (props) => {
                         </>
                     ) : (
                         <>
+                        <Link to='/about'>
                             <button onClick={handleSignUp}>Регистрация</button>
+                            </Link>
                             <p>У вас есть учетная запись? <h5 onClick={() => setHasAccount(!hasAccount)}>Войти</h5></p>
                         </>
                     )}
