@@ -2524,8 +2524,6 @@ function App() {
 
   const [sorter, setSorter] = React.useState(uniqArr)
 
-  console.log(customObj)
-
   const handleSort = (event) => {
     var target = event.target.textContent
     setSorter(_.sortBy(uniqArr, function (obj) {
