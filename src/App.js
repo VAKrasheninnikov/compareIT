@@ -2655,6 +2655,7 @@ function App() {
         </Route>
 
       </div> : 
+      <Route path = '/'>
       <Login
         email={email}
         setEmail={setEmail}
@@ -2667,6 +2668,7 @@ function App() {
         emailError={emailError}
         passwordError={passwordError}
       />
+    </Route>
       }
 
     </div>
