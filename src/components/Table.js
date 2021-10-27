@@ -25,7 +25,7 @@ function Table({ uniqArr, readyForReadyArr, subExperimentalArr, handleChange, ha
                     </tr>
                 </thead>
                 <tbody>
-                    {(workMode ? uniqArr : readyForReadyArr).map((item) => {
+                    {(workMode ? uniqArr : readyForReadyArr).filter((obj)=>obj.foodTitle!=='').map((item) => {
                         return (
                             <>
                                 <tr key={item.id}>
