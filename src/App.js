@@ -2524,8 +2524,6 @@ function App() {
 
   const [sorter, setSorter] = React.useState(uniqArr)
 
-  console.log(customObj)
-
   const handleSort = (event) => {
     var target = event.target.textContent
     setSorter(_.sortBy(uniqArr, function (obj) {
@@ -2574,7 +2572,8 @@ function App() {
 
   return (
     <div className="App">
-      {user ? <div className="bodyApp">
+      {user ? 
+      <div className="bodyApp">
         <Header handleLogOut={handleLogOut} />
         <Route path='/about'>
           <About />
@@ -2654,21 +2653,21 @@ function App() {
           </div>
         </Route>
 
-      </div> : 
-      <Route path = '/'>
-      <Login
-        email={email}
-        setEmail={setEmail}
-        password={password}
-        setPassword={setPassword}
-        handleLogin={handleLogin}
-        handleSignUp={handleSignUp}
-        hasAccount={hasAccount}
-        setHasAccount={setHasAccount}
-        emailError={emailError}
-        passwordError={passwordError}
-      />
-    </Route>
+      </div> :
+        <Route path='/'>
+          <Login
+            email={email}
+            setEmail={setEmail}
+            password={password}
+            setPassword={setPassword}
+            handleLogin={handleLogin}
+            handleSignUp={handleSignUp}
+            hasAccount={hasAccount}
+            setHasAccount={setHasAccount}
+            emailError={emailError}
+            passwordError={passwordError}
+          />
+        </Route>
       }
 
     </div>
