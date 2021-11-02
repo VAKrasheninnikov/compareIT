@@ -11,6 +11,7 @@ body {
   font-family: 'Montserrat', sans-serif;
 }
 
+
 .bodyApp {
   background: #ffffff;
   box-shadow: 0px 10px 20px rgba(0,0,0,0.2);
@@ -204,6 +205,7 @@ tr.sampleCellBig {
   align-items: flex-start;
   justify-content: flex-start;
   margin:50px;
+  overflow-y:none;
 }
 
 .about {
@@ -219,7 +221,7 @@ tr.sampleCellBig {
   font-family: Montserrat;
 font-style: normal;
 font-weight: bold;
-font-size: 60px;
+font-size: 50px;
 line-height: 73px;
 display: flex;
 align-items: flex-end;
@@ -231,7 +233,7 @@ margin-bottom: 105px;
   font-family: Montserrat;
 font-style: normal;
 font-weight: 300;
-font-size: 20px;
+font-size: 17px;
 line-height: 24px;
 display: flex;
 align-items: flex-end;
@@ -252,16 +254,19 @@ letter-spacing: -0.045em;
 .ancestorsSecondlock {
   display: flex;
   align-items: flex-start;
-  margin-top:25px;
+  margin-top:40px;
   margin-left:-7px;
   max-width:976px;
   font-family: Montserrat;
 font-style: normal;
 font-weight: 300;
-font-size: 20px;
 line-height: 24px;
 display: flex;
 margin-left:14px;
+}
+
+.aboutFarmer {
+  height: 349px;
 }
 
 .ancestorsSecondlock span {
@@ -269,14 +274,14 @@ margin-left:14px;
   font-family: Montserrat;
 font-style: normal;
 font-weight: bold;
-font-size: 30px;
+font-size: 24px;
 }
 
 .ancestors p {
   font-family: Montserrat;
 font-style: normal;
 font-weight: 300;
-font-size: 20px;
+font-size: 17px;
 line-height: 24px;
 display: flex;
 align-items: flex-end;
@@ -288,7 +293,7 @@ margin-left:25px;
   font-family: Montserrat;
 font-style: normal;
 font-weight: bold;
-font-size: 25px;
+font-size: 22px;
 line-height: 30px;
 display: flex;
 align-items: flex-end;

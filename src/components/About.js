@@ -21,7 +21,7 @@ function About() {
             </div>
             <div className='ancestors'>
                 <div className='ancestorsFirstBlock'>
-                    <img src={frame2} alt='splash screen'></img>
+                    <img className='aboutFarmer' src={frame2} alt='splash screen'></img>
                     <div>
                     <p>Проект создан в 2021 году по инициативе агро-экологического направления Нижегородского НОЦ</p><br />
                        <p> Инициаторы проекта: <br /><br /> </p>
