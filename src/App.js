@@ -778,8 +778,6 @@ function App() {
   })
 
 
-
-
   const [rendSupArr, setRendSupArr] = React.useState(insideArr)
   const letRendSupArr = () => {
     setRendSupArr([...superInsideArr, absoluteArr])
@@ -2556,6 +2554,7 @@ function App() {
     setRendSupArr([])
     setFinalArr([])
     setRemoveStore([])
+    setAddParsToInside([])
     readyForReadyArr.splice()
     readyArr.splice()
     uniqArr.splice()
