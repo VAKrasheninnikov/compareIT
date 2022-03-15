@@ -19,7 +19,7 @@ function Table({ uniqArr, readyForReadyArr, subExperimentalArr, handleChange, ha
                         </th>
                         {(workMode ? uniqArr[0].items : readyForReadyArr[0].items).map((item) => {
                             return (
-                                <th onClick={handleSort} onClick={(event) => deletingParams(event)}>{item.name}</th>
+                                <th onClick={handleSort} onMouseDown={(event) => deletingParams(event)}>{item.name}</th>
                             )
                         })}
                     </tr>
