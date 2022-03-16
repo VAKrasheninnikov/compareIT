@@ -6,7 +6,7 @@ import FoodOptions from './components/FoodOptions';
 import CustomOptions from './components/CustomOptions';
 import Table from './components/Table';
 import About from './components/About';
-import _, { remove } from 'lodash';
+import _ from 'lodash';
 import { Route } from 'react-router-dom';
 import { unfinishedArr } from './components/soureArr';
 import fire from './fire';
@@ -461,8 +461,8 @@ function App() {
 
   let fatalityFinalArr = fatalityMergingFINAL_ARR()
 
-  const someMulty = () => {
-    let someArr = []
+  function multying(){
+    let someArr = [];
     for (let i = 0; i < Object.keys(change).length; i++) {
       someArr.push(fatalityFinalArr.filter((obj) => obj !== undefined).map((obj) => {
         return (
@@ -487,26 +487,34 @@ function App() {
 
       )
     }
-    return (fatalityFinalArr)
+    return someArr
   }
-  
-  const multiplyingArr = someMulty()
 
+  const almostReadyArr = multying();
 
-  let readyArr = multiplyingArr
-  
+  const finalMulti = () => {
+    let commonMulti = []
+    for (let i = 0; i < almostReadyArr.length - 1; i++) {
+      if (almostReadyArr[i][i] !== undefined) {
+        commonMulti.push(almostReadyArr[i][i])
+      }
+    }
+    return commonMulti
+  }
+
+  const arrBeforePlaces = finalMulti();
 
   // -------------------------------АЛГОРИТМ ВЫСТАВЛЕНИЯ МЕСТ V.2-----------------------------
-  const sortVitamin = readyArr.length ? (arr)=>{
+   const sortVitamin = arrBeforePlaces.length ? ()=>{
     let sourceArr = [];
     let sortedArrs= [];
     let result = [];
-    let initialArr = [...readyArr]
-    let initalColumns = arr[0].items.map((el)=>el.name)
+    let initalColumns = arrBeforePlaces[0].items.map((el)=>el.name)
 
-    for (let i=0; i<arr[0].items.length;i++){
-      for (let y=0; y<arr.length;y++){
-        sourceArr.push(arr[y].items[i])
+
+    for (let i=0; i<arrBeforePlaces[0].items.length;i++){
+      for (let y=0; y<arrBeforePlaces.length;y++){
+        sourceArr.push(arrBeforePlaces[y].items[i])
       }
     }
 
@@ -526,21 +534,20 @@ function App() {
     
     result=sortedArrs.flat()
     
-    let resultedArr = initialArr.map((el)=>{return(
+    let resultedArr = arrBeforePlaces.map((el)=>{return(
       {
         ...el,
         items:el.items.map((obj)=>{
           return ({
             ...obj,
-            place: result.map((object)=>object.subChanges==obj.subChanges?object.place:obj.place).filter((el)=>el!==0)[0]
+            place: result.map((object)=>object.subChanges===obj.subChanges?object.place:obj.place).filter((el)=>el!==0)[0]
           })
         })
       })})
-    
     return resultedArr
   } : []
-  let uniqArr = readyArr.length ? sortVitamin(readyArr) : []
-  console.log(uniqArr)
+  let uniqArr = arrBeforePlaces.length ? sortVitamin() : []
+  
 
   // ------------------------АЛГОРИТМ ВЫСТАВЛЕНИЯ МЕСТ Version 2.0 -----------------------------------  
 
@@ -581,7 +588,6 @@ function App() {
     setRemoveStore([])
     setAddParsToInside([])
     readyForReadyArr.splice()
-    readyArr.splice()
     uniqArr.splice()
     setChange({})
     setWorkMode(false)
@@ -660,7 +666,6 @@ function App() {
                 sorter={sorter}
                 handleChange={handleChange}
                 handleSort={handleSort}
-                readyArr={readyArr}
                 equality={equality}
                 experimentalArr={experimentalArr}
                 subExperimentalArr={subExperimentalArr}
